@@ -8,12 +8,12 @@ int writeFile(string& filename)
 {
     ofstream ofs(filename);
     if (!ofs) {
-        cerr << "Error " << erndl; 
+        cerr << "Error " << endl; 
         return 0;
     }
 
     int numEmpl;
-    cout << "Enter number of employees: " 
+    cout << "Enter number of employees: "; 
     cin >> numEmpl;
 
     ofs << numEmpl << endl;
@@ -31,7 +31,7 @@ int writeFile(string& filename)
         ofs << id << " " << userName << " " << dpmt << " " << sal << endl;
     }
 
-    ofs.close
+    ofs.close();
     return numEmpl;
 
     }
@@ -47,12 +47,21 @@ int writeFile(string& filename)
 
         cout << "Employee count: " << numEmpl << endl;
 
-    }
+    
 
     for ( int i = 0l i < numEmpl; ++i){
         int id; 
         string userName;
         string dpmt;
-        
+        double sal;
+
+        ifs >> id >> userName >> dpmt >> sal;
+
+         cout << "ID: " << id << ", Name: " << userName << ", Department: " << dpmt << ", Salary: " << sal << endl;
     }
-}
+
+    ifs.close();
+
+    return numEmployees;
+
+    }
