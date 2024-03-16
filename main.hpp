@@ -49,7 +49,7 @@ int writeFile(string& filename)
 
     
 
-    for ( int i = 0l i < numEmpl; ++i){
+    for ( int i = 0; i < numEmpl; ++i){
         int id; 
         string userName;
         string dpmt;
@@ -62,6 +62,6 @@ int writeFile(string& filename)
 
     ifs.close();
 
-    return numEmployees;
+    return numEmpl;
 
     }
