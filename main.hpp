@@ -20,6 +20,39 @@ int writeFile(string& filename)
 
     for (int i = 0;i < numEmpl; ++i) {
         int id;
-        strin
+        string userName;
+        string dpmt;
+
+        double sal;
+
+        cout << "Enter Employee ID, Name, Department, and Salary: ";
+        cin >> id >> userName >> dpmt >> sal;
+
+        ofs << id << " " << userName << " " << dpmt << " " << sal << endl;
+    }
+
+    ofs.close
+    return numEmpl;
+
+    }
+    int readFile(string& filename) {
+        ifstream ifs(filename);
+        if (!ifs){ 
+            cerr << "Error" << endl;
+            return 0;
+        }
+
+        int numEmpl; 
+        ifs >> numEmpl; 
+
+        cout << "Employee count: " << numEmpl << endl;
+
+    }
+
+    for ( int i = 0l i < numEmpl; ++i){
+        int id; 
+        string userName;
+        string dpmt;
+        
     }
 }
